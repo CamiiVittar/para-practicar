@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: black;
+}
+/* inicio del header */
+.contenedor-menu{
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    justify-content: space-between;
+}
+.contenedor-logo{
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    width: 30%;
+    margin: 1% 1%;
+
+}
+.logo{
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    background-color: white;
+
+}
+
+.menu{
+    width: 60%;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu-item{
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0% 5%;
+
+}
+/* fin del header */
+/* inicio cuerpo */
+.section-one-container , .section-two-container, .contenedor-articulo{
+    display: flex;
+    background-color: black;
+    margin: 3%;
+    color: white;
+    text-align: center;
+}
+.section-one-carrousel, .photo-grid, .articulo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.photo-item, .photo-grid-item, .photo-article{
+
+    width: 20rem;
+    height: 20rem;
+
+}
+.destacados, .cuidados-velas, .beneficios-velas{
+    display: flex;
+    justify-content: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex-wrap: wrap;
+    color: white;
+    font-size:xx-large;
+    margin: 1% 1%;
+
+}
+/* grila en pagina de recomendaciones */
+.grid-container {
+    /* habilitar grilla */
+    display: grid;
+    /* definir filas mas definir cuanto mide cada fila con unidades de medida */
+    grid-template-rows: 1fr 1 fr 1fr 1fr;
+    /* cuando se repiten valores, podemos usar la funcion repeat */
+    border: 3px solid black;
+    /* definir columna mas definir cuanto mide cada columna con unidades de medida */
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    /* para que se amolden las filas y columnas podemos usar unidades relativas o fracciones  */
+    /* especia de margin entre celdas */
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+.grid-uno{
+    grid-column: 1 / 3 ;
+    grid-row: 2/4;
+}
+.imagen-cuidados, .imagen-beneficios{
+    width: 50% ;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.grid-dos{
+    grid-column: 3 / 5;
+    grid-row: 2/4;
+}
+.subtitulos{
+    font-size: medium;
+    color: burlywood;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 2% 2%;
+}
+.textos{
+    font-size: small;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 1% 1%;
+}
+/* fin cuerpo */
+/* inicio footer */
+.contenedor-footer{
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
