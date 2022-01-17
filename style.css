@@ -47,7 +47,19 @@
     justify-content: space-between;
     background-color: black;
     padding: 0% 5%;
+    transition: all 0,8s ease;
+    text-decoration: none;
+    color: white;
 
+}
+.menu-item:hover {
+    transform: scale(1,5);
+    animation: changeColor 0,8s;
+}
+@keyframes changeColor {
+    100% {
+        color: yellow;
+    }
 }
 /* fin del header */
 /* inicio cuerpo */
