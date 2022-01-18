@@ -69,6 +69,13 @@
     margin: 3%;
     color: white;
     text-align: center;
+    justify-content: center;
+}
+.carousel{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content:right;
 }
 .section-one-carrousel, .photo-grid, .articulo{
     width: 100%;
